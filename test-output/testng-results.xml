@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-19T12:57:31 IST" name="Default suite" finished-at="2023-10-19T12:59:36 IST" duration-ms="125747">
+    <groups>
+    </groups>
+    <test started-at="2023-10-19T12:57:31 IST" name="Default test" finished-at="2023-10-19T12:59:36 IST" duration-ms="125747">
+      <class name="Sanity.Atlas.Testing">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Sanity.Atlas.Testing@1af2d44a]" started-at="2023-10-19T12:57:31 IST" name="setup" finished-at="2023-10-19T12:57:32 IST" duration-ms="1328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:1, instance:Sanity.Atlas.Testing@1af2d44a]" started-at="2023-10-19T12:57:32 IST" name="login" finished-at="2023-10-19T12:57:49 IST" duration-ms="17013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="series_set()[pri:2, instance:Sanity.Atlas.Testing@1af2d44a]" started-at="2023-10-19T12:57:49 IST" name="series_set" finished-at="2023-10-19T12:58:03 IST" duration-ms="14270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- series_set -->
+        <test-method signature="atlaseditor()[pri:3, instance:Sanity.Atlas.Testing@1af2d44a]" started-at="2023-10-19T12:58:03 IST" name="atlaseditor" finished-at="2023-10-19T12:58:12 IST" duration-ms="9076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- atlaseditor -->
+        <test-method signature="Editmenu()[pri:4, instance:Sanity.Atlas.Testing@1af2d44a]" started-at="2023-10-19T12:58:12 IST" name="Editmenu" finished-at="2023-10-19T12:58:15 IST" duration-ms="2716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Editmenu -->
+        <test-method signature="contributor()[pri:5, instance:Sanity.Atlas.Testing@1af2d44a]" started-at="2023-10-19T12:58:15 IST" name="contributor" finished-at="2023-10-19T12:58:20 IST" duration-ms="5121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contributor -->
+        <test-method signature="draw()[pri:6, instance:Sanity.Atlas.Testing@1af2d44a]" started-at="2023-10-19T12:58:20 IST" name="draw" finished-at="2023-10-19T12:58:23 IST" duration-ms="2959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- draw -->
+        <test-method signature="annotation()[pri:7, instance:Sanity.Atlas.Testing@1af2d44a]" started-at="2023-10-19T12:58:23 IST" name="annotation" finished-at="2023-10-19T12:58:41 IST" duration-ms="17978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- annotation -->
+        <test-method signature="save()[pri:8, instance:Sanity.Atlas.Testing@1af2d44a]" started-at="2023-10-19T12:58:41 IST" name="save" finished-at="2023-10-19T12:58:47 IST" duration-ms="6012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- save -->
+        <test-method signature="back()[pri:9, instance:Sanity.Atlas.Testing@1af2d44a]" started-at="2023-10-19T12:58:47 IST" name="back" finished-at="2023-10-19T12:58:52 IST" duration-ms="5007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- back -->
+        <test-method signature="retrive()[pri:10, instance:Sanity.Atlas.Testing@1af2d44a]" started-at="2023-10-19T12:58:52 IST" name="retrive" finished-at="2023-10-19T12:59:18 IST" duration-ms="25260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- retrive -->
+        <test-method signature="delete()[pri:11, instance:Sanity.Atlas.Testing@1af2d44a]" started-at="2023-10-19T12:59:18 IST" name="delete" finished-at="2023-10-19T12:59:36 IST" duration-ms="18854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- delete -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Sanity.Atlas.Testing@1af2d44a]" started-at="2023-10-19T12:59:36 IST" name="close" finished-at="2023-10-19T12:59:36 IST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Sanity.Atlas.Testing -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
