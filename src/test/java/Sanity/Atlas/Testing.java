@@ -27,6 +27,7 @@
 	import org.testng.annotations.AfterTest;
 	import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 	import io.restassured.RestAssured;
@@ -49,6 +50,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		
 		       
 		}
+		@Parameters("URL")
 		@Test(priority=1)
 		public void login(@Optional("defaultURL") String URL) throws InterruptedException
 		{
