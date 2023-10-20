@@ -1,9 +1,5 @@
 	package Sanity.Atlas;
 	
-	
-	
-	
-	
 	import org.testng.annotations.Test;
 	
 	import org.testng.Assert;
@@ -286,9 +282,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 	            .release()
 	            .perform();
 		        Thread.sleep(5000);
-		        System.out.println("Annotation completed");
 		        checkConsoleLog();
-			
+		        System.out.println("Annotation completed");
 		}
 		@Test(priority=8)
 		public void save() throws InterruptedException
@@ -299,11 +294,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 			WebElement toasterElement = deleteWait.until(ExpectedConditions.presenceOfElementLocated(toasterLocator));
 			String toasterMessage = toasterElement.getText();
 			AssertJUnit.assertEquals("Sucessfully saved the regions", toasterMessage);
-			System.out.println("*******************Saved the regions successfully************************");
 			Thread.sleep(2000);
 			checkConsoleLog();
 			Save_API();
-			
+			System.out.println("*******************Saved the regions successfully************************");
 	
 		}
 		@Test(priority=9)
