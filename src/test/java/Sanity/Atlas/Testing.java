@@ -263,7 +263,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 			clickElementByXpath("(//nb-icon[@pack='nebular-essentials'])[3]", "Annotation option");
 	    	 clickElementByXpath("(//i[@role='presentation'])[1]", "node1");
 	    	 clickElementByXpath("(//i[@role='presentation'])[4]", "node2");
-	    	 clickElementByXpath("(//i[@role='presentation'])[17]", "node3");
+	    	 clickElementByXpath("(//i[@role='presentation'])[7]", "node3");
+	    	 clickElementByXpath("(//i[@role='presentation'])[11]", "node4");
 			
 			 WebElement canvas = driver.findElement(By.xpath("//canvas"));
 		     Actions actions = new Actions(driver);
