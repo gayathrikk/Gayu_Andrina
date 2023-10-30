@@ -196,6 +196,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 			 checkConsoleLog();
 			 Atlas_API();
 			 System.out.println("************************Atlas Editor open sucessfully***********************");
+			 Thread.sleep(6000);
 			 
 		}
 		@Test(priority=4)
