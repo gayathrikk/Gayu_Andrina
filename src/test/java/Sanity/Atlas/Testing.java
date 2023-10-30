@@ -133,17 +133,17 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 	
 			
 	    	 try {
-	    		    WebElement Mouse = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//table[@class='cdk-table nb-tree-grid']//tr[7]")));
+	    		    WebElement Mouse = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//table[@class='cdk-table nb-tree-grid']//tr[6]")));
 	    		    Mouse.click();
-	    		    System.out.println("Mouse clicked successfully.");
+	    		    System.out.println("Human Fetus clicked successfully.");
 	    		    Thread.sleep(2000);
 	    		} catch (Exception e) {
-	    		    System.out.println("Mouse not clicked: " + e.getMessage());
+	    		    System.out.println("Human Fetus not clicked: " + e.getMessage());
 	    		}
 	    	 checkConsoleLog();
 	    	 
 	    	 try {
-	    		    WebElement Brain = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//table[@class='cdk-table nb-tree-grid']//tr[8]//td[2]")));
+	    		    WebElement Brain = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//table[@class='cdk-table nb-tree-grid']//tr[7]//td[2]")));
 	    		    Brain.click();
 	    		    System.out.println(" Brain clicked successfully.");
 	    		    Thread.sleep(2000);
@@ -153,17 +153,17 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 	    	 checkConsoleLog();
 	    	 
 	    	 try {
-	 		    WebElement MTB_10 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//table[@class='cdk-table nb-tree-grid']//tr[9]//td[3]")));
+	 		    WebElement MTB_10 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//table[@class='cdk-table nb-tree-grid']//tr[25]//td[3]")));
 	 		    MTB_10.click();
-	 		    System.out.println(" MTB_10 clicked successfully.");
+	 		    System.out.println("FTB-40 clicked successfully.");
 	 		    Thread.sleep(2000);
 	 		} catch (Exception e) {
-	 		    System.out.println(" MTB_10 not clicked: " + e.getMessage());
+	 		    System.out.println(" FTB-40 not clicked: " + e.getMessage());
 	 		}
 	    	 checkConsoleLog();
 	    	 
 	    	 try {
-	  		    WebElement section = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[text()='382'])[1]")));
+	  		    WebElement section = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[text()='712'])[1]")));
 	  		    section.click();
 	  		    System.out.println("section clicked successfully.");
 	  		    Thread.sleep(2000);
