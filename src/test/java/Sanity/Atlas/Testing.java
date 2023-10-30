@@ -311,7 +311,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		@Test(priority=10)
 		public void retrive() throws InterruptedException
 		{
-			clickElementByXpath("(//span[text()='382'])[1]", "section ");
+			clickElementByXpath("(//span[text()='712'])[1]", "section ");
 			clickElementByXpath("//a[@title='Atlas Editor']", "Atlas Editor");
 			clickElementByXpath("//a[@title='Edit Menu']", "Edit menu");
 			clickElementByXpath("(//nb-icon[@pack='nebular-essentials'])[3]", "Contributor option"); 
