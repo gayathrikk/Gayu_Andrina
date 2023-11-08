@@ -46,11 +46,13 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		
 		       
 		}
-		@Parameters("URL")
+		//@Parameters("URL")
 		@Test(priority=1)
-		public void login(@Optional("defaultURL") String URL) throws InterruptedException
+		//public void login(@Optional("defaultURL") String URL) throws InterruptedException
+		public void login()throws InterruptedException
 		{
-			driver.get(URL);
+			//driver.get(URL);
+			driver.get("https://apollo2.humanbrain.in/viewer/annotation/portal");
 			driver.manage().window().maximize();
 	        String currentURL = driver.getCurrentUrl();
 	        System.out.println("Current URL: " + currentURL);
@@ -163,7 +165,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 	    	 checkConsoleLog();
 	    	 
 	    	 try {
-	  		    WebElement section = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[text()='712'])[1]")));
+	  		    WebElement section = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[text()='883'])[1]")));
 	  		    section.click();
 	  		    System.out.println("section clicked successfully.");
 	  		    Thread.sleep(2000);
@@ -312,7 +314,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		@Test(priority=10)
 		public void retrive() throws InterruptedException
 		{
-			clickElementByXpath("(//span[text()='712'])[1]", "section ");
+			clickElementByXpath("(//span[text()='883'])[1]", "section ");
 			clickElementByXpath("//a[@title='Atlas Editor']", "Atlas Editor");
 			clickElementByXpath("//a[@title='Edit Menu']", "Edit menu");
 			clickElementByXpath("(//nb-icon[@pack='nebular-essentials'])[3]", "Contributor option"); 
@@ -336,17 +338,18 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		{
 			clickElementByXpath("//a[@title='Draw']", "Draw");
 			WebElement canvas = driver.findElement(By.xpath("//canvas"));
-	//		Actions actions = new Actions(driver);
-//			int centerX = 0; 
-//			int centerY = 0; 
-//	
-//			
-//			actions.moveToElement(canvas, centerX, centerY)
-//			        .click()
-//			        .perform();
-			 clickElementByXpath("(//i[@role='presentation'])[11]", "node4");
+			Actions actions = new Actions(driver);
+			int centerX = 0; 
+			int centerY = 0; 
 	
-			Thread.sleep(4000);
+			
+			actions.moveToElement(canvas, centerX, centerY)
+			        .click()
+			        .perform();
+//			Thread.sleep(2000);
+//			 clickElementByXpath("(//i[@role='presentation'])[11]", "node4");
+	
+			Thread.sleep(2000);
 			clickElementByXpath("//a[@title='Delete']", "Delete option");
 			clickElementByXpath("//button[text()='Delete']", "Delete button");
 			clickElementByXpath("//a[@title='Save']", "save");
