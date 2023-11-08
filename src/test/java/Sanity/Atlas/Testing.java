@@ -336,14 +336,15 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		{
 			clickElementByXpath("//a[@title='Draw']", "Draw");
 			WebElement canvas = driver.findElement(By.xpath("//canvas"));
-			Actions actions = new Actions(driver);
-			int centerX = 0; 
-			int centerY = 0; 
-	
-			
-			actions.moveToElement(canvas, centerX, centerY)
-			        .click()
-			        .perform();
+	//		Actions actions = new Actions(driver);
+//			int centerX = 0; 
+//			int centerY = 0; 
+//	
+//			
+//			actions.moveToElement(canvas, centerX, centerY)
+//			        .click()
+//			        .perform();
+			 clickElementByXpath("(//i[@role='presentation'])[11]", "node4");
 	
 			Thread.sleep(4000);
 			clickElementByXpath("//a[@title='Delete']", "Delete option");
