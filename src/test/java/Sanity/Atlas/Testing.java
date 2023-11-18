@@ -46,13 +46,13 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		
 		       
 		}
-		//@Parameters("URL")
+		@Parameters("URL")
 		@Test(priority=1)
-		//public void login(@Optional("defaultURL") String URL) throws InterruptedException
-		public void login()throws InterruptedException
+		public void login(@Optional("defaultURL") String URL) throws InterruptedException
+		//public void login()throws InterruptedException
 		{
-			//driver.get(URL);
-			driver.get("https://apollo2.humanbrain.in/viewer/annotation/portal");
+			driver.get(URL);
+			//driver.get("https://apollo2.humanbrain.in/viewer/annotation/portal");
 			driver.manage().window().maximize();
 	        String currentURL = driver.getCurrentUrl();
 	        System.out.println("Current URL: " + currentURL);
