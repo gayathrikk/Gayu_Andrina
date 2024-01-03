@@ -8,6 +8,7 @@
           <include name="close"/>
           <include name="setup"/>
           <include name="save"/>
+          <include name="annotation"/>
         </methods>
       </class> <!-- Sanity.Atlas.Testing -->
     </classes>

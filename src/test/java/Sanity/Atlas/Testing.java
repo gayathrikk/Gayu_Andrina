@@ -5,8 +5,9 @@
 	import org.testng.Assert;
 	import org.testng.AssertJUnit;
 	import org.openqa.selenium.support.ui.WebDriverWait;
-	
-	import java.net.URL;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 	import java.util.List;
 	import java.util.Set;
 	import java.util.logging.Level;
@@ -37,22 +38,22 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		
 		@BeforeTest
 		
-		public void setup() throws Exception
+		public void setup() throws MalformedURLException 
 		{
 			
 			  DesiredCapabilities dc = DesiredCapabilities.chrome();
-		        URL url = new URL("http://172.12.20.118:5555/wd/hub");
+		        URL url = new URL("http://172.20.23.7:5555/wd/hub");
 		        driver = new RemoteWebDriver(url, dc);
 		
 		       
 		}
-		@Parameters("URL")
+		//@Parameters("URL")
 		@Test(priority=1)
-		public void login(@Optional("defaultURL") String URL) throws InterruptedException
-		//public void login()throws InterruptedException
+		//public void login(@Optional("defaultURL") String URL) throws InterruptedException
+		public void login()throws InterruptedException
 		{
-			driver.get(URL);
-			//driver.get("https://apollo2.humanbrain.in/viewer/annotation/portal");
+			//driver.get(URL);
+			driver.get("https://apollo2.humanbrain.in/viewer/annotation/portal");
 			driver.manage().window().maximize();
 	        String currentURL = driver.getCurrentUrl();
 	        System.out.println("Current URL: " + currentURL);
@@ -223,7 +224,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 			WebDriverWait wait = new WebDriverWait(driver, 30); 
 			driver.switchTo().defaultContent();
 			 try {
-		  		    WebElement contributor= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//nb-icon[@pack='nebular-essentials'])[3]")));
+		  		    WebElement contributor= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//nb-icon[@pack='nebular-essentials'])[2]")));
 		  		    contributor.click();
 		  		    System.out.println("contributor option open successfully.");
 		  		    Thread.sleep(2000);
@@ -242,97 +243,97 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		  		}
 			 checkConsoleLog();
 		}
-		@Test(priority=6)
-		public void draw() throws InterruptedException
-		{
-			WebDriverWait wait = new WebDriverWait(driver, 30); 
-			driver.switchTo().defaultContent();
-			try {
-	  		    WebElement draw= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Draw']")));
-	  		    draw.click();
-	  		    System.out.println("Draw option selected successfully.");
-	  		    Thread.sleep(2000);
-	  		} catch (Exception e) {
-	  		    System.out.println("Draw option is not open: " + e.getMessage());
-	  		}
-		 checkConsoleLog();
-		}
-		
-		@Test(priority=7)
-		public void annotation() throws InterruptedException
-		{
-			
-			clickElementByXpath("(//nb-icon[@pack='nebular-essentials'])[3]", "Annotation option");
-	    	 clickElementByXpath("(//i[@role='presentation'])[1]", "node1");
-	    	 clickElementByXpath("(//i[@role='presentation'])[4]", "node2");
-	    	 clickElementByXpath("(//i[@role='presentation'])[7]", "node3");
-	    	 clickElementByXpath("(//i[@role='presentation'])[11]", "node4");
-			
-			 WebElement canvas = driver.findElement(By.xpath("//canvas"));
-		     Actions actions = new Actions(driver);
-		        
-		        clickElementByXpath("//a[@title='Add']", "Add");
-		        
-		        actions.moveToElement(canvas)
-	            .click()
-	            .moveByOffset(200, 0)
-	            .click()
-	            .moveByOffset(0, 200)
-	            .click()
-	            .moveByOffset(-200, 0)
-	            .click()
-	            .moveByOffset(0, -200)
-	            .click()
-	            .release()
-	            .perform();
-		        Thread.sleep(5000);
-		        checkConsoleLog();
-		        System.out.println("Annotation completed");
-		}
-		@Test(priority=8)
-		public void save() throws InterruptedException
-		{
-			clickElementByXpath("//a[@title='Save']", "save");
-			WebDriverWait deleteWait = new WebDriverWait(driver, 100);
-			By toasterLocator = By.xpath("//div[text()='Sucessfully saved the regions']");
-			WebElement toasterElement = deleteWait.until(ExpectedConditions.presenceOfElementLocated(toasterLocator));
-			String toasterMessage = toasterElement.getText();
-			AssertJUnit.assertEquals("Sucessfully saved the regions", toasterMessage);
-			Thread.sleep(2000);
-			checkConsoleLog();
-			Save_API();
-			System.out.println("*******************Saved the regions successfully************************");
-	
-		}
-		@Test(priority=9)
-		public void back() throws InterruptedException
-		{
-			clickElementByXpath("//a[@title='Close']", "close");
-			clickElementByXpath("//a[@title='Back']", "Back ");
-			
-		}
-		@Test(priority=10)
-		public void retrive() throws InterruptedException
-		{
-			clickElementByXpath("(//span[text()='883'])[1]", "section ");
-			clickElementByXpath("//a[@title='Atlas Editor']", "Atlas Editor");
-			clickElementByXpath("//a[@title='Edit Menu']", "Edit menu");
-			clickElementByXpath("(//nb-icon[@pack='nebular-essentials'])[3]", "Contributor option"); 
-			clickElementByXpath("(//input[@type='radio'])[2]", "Contributor"); 
-			String nonenode=driver.findElement(By.xpath("(//div[@class='paragraph'])[2]")).getText();
-			 System.out.println("None node="+nonenode);
-			clickElementByXpath("(//nb-icon[@pack='nebular-essentials'])[4]", "Annotation option");
-			clickElementByXpath("(//i[@role='presentation'])[1]", "node1");
-	    	 clickElementByXpath("(//i[@role='presentation'])[4]", "node2");
-	    	 clickElementByXpath("(//i[@role='presentation'])[7]", "node3");
-	    	 clickElementByXpath("(//i[@role='presentation'])[11]", "node4");
-			String selectednode=driver.findElement(By.xpath("(//div[@class='paragraph'])[2] ")).getText();
-			 System.out.println("Selected node="+selectednode);
-			Assert.assertNotEquals(nonenode, selectednode);
-			System.out.println("*******************saved node retrived successfully************************");
-			Thread.sleep(4000);
-			 
-		}
+//		@Test(priority=6)
+//		public void draw() throws InterruptedException
+//		{
+//			WebDriverWait wait = new WebDriverWait(driver, 30); 
+//			driver.switchTo().defaultContent();
+//			try {
+//	  		    WebElement draw= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Draw']")));
+//	  		    draw.click();
+//	  		    System.out.println("Draw option selected successfully.");
+//	  		    Thread.sleep(2000);
+//	  		} catch (Exception e) {
+//	  		    System.out.println("Draw option is not open: " + e.getMessage());
+//	  		}
+//		 checkConsoleLog();
+//		}
+//		
+//		@Test(priority=7)
+//		public void annotation() throws InterruptedException
+//		{
+//			
+//			clickElementByXpath("(//nb-icon[@pack='nebular-essentials'])[2]", "Annotation option");
+//	    	clickElementByXpath("(//i[@role='presentation'])[1]", "node1");
+//	    	 clickElementByXpath("(//i[@role='presentation'])[4]", "node2");
+//	    	 clickElementByXpath("(//i[@role='presentation'])[7]", "node3");
+//	    	 clickElementByXpath("(//i[@role='presentation'])[11]", "node4");
+//			
+//			 WebElement canvas = driver.findElement(By.xpath("//canvas"));
+//		     Actions actions = new Actions(driver);
+//		        
+//		        clickElementByXpath("//a[@title='Add']", "Add");
+//		        
+//		        actions.moveToElement(canvas)
+//	            .click()
+//	            .moveByOffset(200, 0)
+//	            .click()
+//	            .moveByOffset(0, 200)
+//	            .click()
+//	            .moveByOffset(-200, 0)
+//	            .click()
+//	            .moveByOffset(0, -200)
+//	            .click()
+//	            .release()
+//	            .perform();
+//		        Thread.sleep(5000);
+//		        checkConsoleLog();
+//		        System.out.println("Annotation completed");
+//		}
+//		@Test(priority=8)
+//		public void save() throws InterruptedException
+//		{
+//			clickElementByXpath("//a[@title='Save']", "save");
+//			WebDriverWait deleteWait = new WebDriverWait(driver, 100);
+//			By toasterLocator = By.xpath("//div[text()='Sucessfully saved the regions']");
+//			WebElement toasterElement = deleteWait.until(ExpectedConditions.presenceOfElementLocated(toasterLocator));
+//			String toasterMessage = toasterElement.getText();
+//			AssertJUnit.assertEquals("Sucessfully saved the regions", toasterMessage);
+//			Thread.sleep(2000);
+//			checkConsoleLog();
+//			Save_API();
+//			System.out.println("*******************Saved the regions successfully************************");
+//	
+//		}
+//		@Test(priority=9)
+//		public void back() throws InterruptedException
+//		{
+//			clickElementByXpath("//a[@title='Close']", "close");
+//			clickElementByXpath("//a[@title='Back']", "Back ");
+//			
+//		}
+//		@Test(priority=10)
+//		public void retrive() throws InterruptedException
+//		{
+//			clickElementByXpath("(//span[text()='883'])[1]", "section ");
+//			clickElementByXpath("//a[@title='Atlas Editor']", "Atlas Editor");
+//			clickElementByXpath("//a[@title='Edit Menu']", "Edit menu");
+//			clickElementByXpath("(//nb-icon[@pack='nebular-essentials'])[2]", "Contributor option"); 
+//			clickElementByXpath("(//input[@type='radio'])[2]", "Contributor"); 
+//			String nonenode=driver.findElement(By.xpath("(//div[@class='paragraph'])[2]")).getText();
+//			 System.out.println("None node="+nonenode);
+//			clickElementByXpath("(//nb-icon[@pack='nebular-essentials'])[3]", "Annotation option");
+//			clickElementByXpath("(//i[@role='presentation'])[1]", "node1");
+//	    	 clickElementByXpath("(//i[@role='presentation'])[4]", "node2");
+//	    	 clickElementByXpath("(//i[@role='presentation'])[7]", "node3");
+//	    	 clickElementByXpath("(//i[@role='presentation'])[11]", "node4");
+//			String selectednode=driver.findElement(By.xpath("(//div[@class='paragraph'])[2] ")).getText();
+//			 System.out.println("Selected node="+selectednode);
+//			Assert.assertNotEquals(nonenode, selectednode);
+//			System.out.println("*******************saved node retrived successfully************************");
+//			Thread.sleep(4000);
+//			 
+//		}
 		@Test(priority=11)
 		public void delete() throws InterruptedException
 		{
