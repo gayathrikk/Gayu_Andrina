@@ -1,6 +1,7 @@
 	package Sanity.Atlas;
 	
 	import org.testng.annotations.Test;
+
 	
 	import org.testng.Assert;
 	import org.testng.AssertJUnit;
@@ -47,13 +48,13 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		
 		       
 		}
-		@Parameters("URL")
+		//@Parameters("URL")
 		@Test(priority=1)
-		public void login(@Optional("defaultURL") String URL) throws InterruptedException
-		//public void login()throws InterruptedException
+		//public void login(@Optional("defaultURL") String URL) throws InterruptedException
+		public void login()throws InterruptedException
 		{
-			driver.get(URL);
-			//driver.get("https://apollo2.humanbrain.in/viewer/annotation/portal");
+			//driver.get(URL);
+			driver.get("https://apollo2.humanbrain.in/viewer/annotation/portal");
 			driver.manage().window().maximize();
 	        String currentURL = driver.getCurrentUrl();
 	        System.out.println("Current URL: " + currentURL);
@@ -165,6 +166,25 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 	 		}
 	    	 checkConsoleLog();
 	    	 
+	    	 String parentWindow = driver.getWindowHandle();
+	    	 try {
+		 		    WebElement viewericon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//nb-icon[@nbtooltip='Viewer']")));
+		 		   viewericon.click();
+		 		    System.out.println("viewer icon is clicked successfully.");
+		 		    Thread.sleep(2000);
+		 		} catch (Exception e) {
+		 		    System.out.println(" viewer icon is not clicked: " + e.getMessage());
+		 		}
+	    	 
+	    	 wait.until(ExpectedConditions.numberOfWindowsToBe(2));
+			  Set<String> allWindows = driver.getWindowHandles();
+		        for (String window : allWindows) {
+		            if (!window.equals(parentWindow)) {
+		                driver.switchTo().window(window);
+		                break;
+		            }
+		        }
+	    	 
 	    	 try {
 	  		    WebElement section = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[text()='883'])[1]")));
 	  		    section.click();
@@ -178,8 +198,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 	    	 seriesset_API();
 	    	 System.out.println("************************************Series set validation done********************************");
 	
-	    	 
-		}
+	 	}
 		
 		@Test(priority=3)
 		
