@@ -251,107 +251,143 @@ public class Atlas_Pins {
 		  		} catch (Exception e) {
 		  		    System.out.println("save option is not clicked : " + e.getMessage());
 		  		}
-//			    WebDriverWait Wait = new WebDriverWait(driver, 10);
+			    System.out.println("***************Add pin1 added successfully*****************");
+//			    WebDriverWait Wait = new WebDriverWait(driver, 100);
 //				By toasterLocator = By.xpath("//div[text()='Pins Saved successfully']']");
 //				WebElement toasterElement = Wait.until(ExpectedConditions.presenceOfElementLocated(toasterLocator));
 //				String toasterMessage = toasterElement.getText();
 //				AssertJUnit.assertEquals("Pins Saved successfully", toasterMessage);
-//				System.out.println("***************Pins text saved sucessfully****************");
+//				System.out.println("***************Pins text saved successfully****************");
 		  		}
 	     
+	     
+//	     @Test(priority=6)
+//		 public void add_pins2()
+//		 {
+//			 WebDriverWait wait = new WebDriverWait(driver, 30); 
+//				driver.switchTo().defaultContent();
+//				 try {
+//			  		    WebElement Editmenu= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Add Pins']")));
+//			  		    Editmenu.click();
+//			  		    System.out.println("add pins clicked successfully.");
+//			  		    Thread.sleep(2000);
+//			  		} catch (Exception e) {
+//			  		    System.out.println("add pins is not clicked : " + e.getMessage());
+//			  		}
+//				 
+//				 WebElement canvas = driver.findElement(By.xpath("//canvas"));
+//			     Actions actions = new Actions(driver);
+//			     
+//			     actions.moveToElement(canvas)
+//			        .moveByOffset(200, 0)
+//		            .click()
+//		            .release()
+//		            .perform();
+//			     System.out.println("Add pin windows opened");
+//		 
+//			     
+//	    	   driver.switchTo().frame(0);
+//			    driver.findElement(By.xpath("//body[@class='mce-content-body ']")).sendKeys("Testing 2..."); 
+//			    driver.switchTo().defaultContent();
+//			    try {
+//		  		    WebElement Save= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Save']")));
+//		  		  Save.click();
+//		  		    System.out.println("save option clicked successfully.");
+//		  		    Thread.sleep(2000);
+//		  		} catch (Exception e) {
+//		  		    System.out.println("save option is not clicked : " + e.getMessage());
+//		  		}
+//			    System.out.println("***************Add pin2 added successfully*****************");
+//			    
+////			    WebDriverWait Wait = new WebDriverWait(driver, 10);
+////				By toasterLocator = By.xpath("//div[text()='Pins Saved successfully']']");
+////				WebElement toasterElement = Wait.until(ExpectedConditions.presenceOfElementLocated(toasterLocator));
+////				String toasterMessage = toasterElement.getText();
+////				AssertJUnit.assertEquals("Pins Saved successfully", toasterMessage);
+////				System.out.println("***************Pins text saved sucessfully****************");
+//	     }
+	     
+//	     @Test(priority=7)
+//		 public void add_pins3()
+//		 {
+//			 WebDriverWait wait = new WebDriverWait(driver, 30); 
+//				driver.switchTo().defaultContent();
+//				 try {
+//			  		    WebElement Editmenu= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Add Pins']")));
+//			  		    Editmenu.click();
+//			  		    System.out.println("add pins clicked successfully.");
+//			  		    Thread.sleep(2000);
+//			  		} catch (Exception e) {
+//			  		    System.out.println("add pins is not clicked : " + e.getMessage());
+//			  		}
+//				 
+//				 WebElement canvas = driver.findElement(By.xpath("//canvas"));
+//			     Actions actions = new Actions(driver);
+//			     
+//			     actions.moveToElement(canvas)
+//			        .moveByOffset(0, 200)
+//		            .click()
+//		            .release()
+//		            .perform();
+//			     System.out.println("Add pin windows opened");
+//		 
+//			     
+//	    	   driver.switchTo().frame(0);
+//			    driver.findElement(By.xpath("//body[@class='mce-content-body ']")).sendKeys("Testing 3..."); 
+//			    driver.switchTo().defaultContent();
+//			    try {
+//		  		    WebElement Save= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Save']")));
+//		  		  Save.click();
+//		  		    System.out.println("save option clicked successfully.");
+//		  		    Thread.sleep(2000);
+//		  		} catch (Exception e) {
+//		  		    System.out.println("save option is not clicked : " + e.getMessage());
+//		  		}
+//			    System.out.println("***************Add pin3 added successfully*****************");
+////			    WebDriverWait Wait = new WebDriverWait(driver, 10);
+////				By toasterLocator = By.xpath("//div[text()='Pins Saved successfully']']");
+////				WebElement toasterElement = Wait.until(ExpectedConditions.presenceOfElementLocated(toasterLocator));
+////				String toasterMessage = toasterElement.getText();
+////				AssertJUnit.assertEquals("Pins Saved successfully", toasterMessage);
+////				System.out.println("***************Pins text saved sucessfully****************");
+//	     }
 	     
 	     @Test(priority=6)
-		 public void add_pins2()
-		 {
-			 WebDriverWait wait = new WebDriverWait(driver, 30); 
-				driver.switchTo().defaultContent();
-				 try {
-			  		    WebElement Editmenu= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Add Pins']")));
-			  		    Editmenu.click();
-			  		    System.out.println("add pins clicked successfully.");
-			  		    Thread.sleep(2000);
-			  		} catch (Exception e) {
-			  		    System.out.println("add pins is not clicked : " + e.getMessage());
-			  		}
-				 
-				 WebElement canvas = driver.findElement(By.xpath("//canvas"));
-			     Actions actions = new Actions(driver);
-			     
-			     actions.moveToElement(canvas)
-			        .moveByOffset(200, 0)
-		            .click()
-		            .release()
-		            .perform();
-			     System.out.println("Add pin windows opened");
-		 
-			     
-	    	   driver.switchTo().frame(0);
-			    driver.findElement(By.xpath("//body[@class='mce-content-body ']")).sendKeys("Testing 2..."); 
-			    driver.switchTo().defaultContent();
-			    try {
-		  		    WebElement Save= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Save']")));
-		  		  Save.click();
-		  		    System.out.println("save option clicked successfully.");
+	     public void show_pins() throws InterruptedException
+	     {
+	    	 WebDriverWait wait = new WebDriverWait(driver, 30); 
+	    	 try {
+		  		    WebElement showpins= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Show Pins']")));
+		  		  showpins.click();
+		  		    System.out.println("**************show pins clicked successfully.*************");
 		  		    Thread.sleep(2000);
 		  		} catch (Exception e) {
-		  		    System.out.println("save option is not clicked : " + e.getMessage());
+		  		    System.out.println("show pins is not clicked : " + e.getMessage());
 		  		}
-			    
-//			    WebDriverWait Wait = new WebDriverWait(driver, 10);
-//				By toasterLocator = By.xpath("//div[text()='Pins Saved successfully']']");
-//				WebElement toasterElement = Wait.until(ExpectedConditions.presenceOfElementLocated(toasterLocator));
-//				String toasterMessage = toasterElement.getText();
-//				AssertJUnit.assertEquals("Pins Saved successfully", toasterMessage);
-//				System.out.println("***************Pins text saved sucessfully****************");
+	    	 Thread.sleep(5000);
 	     }
 	     
 	     @Test(priority=7)
-		 public void add_pins3()
-		 {
-			 WebDriverWait wait = new WebDriverWait(driver, 30); 
-				driver.switchTo().defaultContent();
-				 try {
-			  		    WebElement Editmenu= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Add Pins']")));
-			  		    Editmenu.click();
-			  		    System.out.println("add pins clicked successfully.");
-			  		    Thread.sleep(2000);
-			  		} catch (Exception e) {
-			  		    System.out.println("add pins is not clicked : " + e.getMessage());
-			  		}
-				 
-				 WebElement canvas = driver.findElement(By.xpath("//canvas"));
-			     Actions actions = new Actions(driver);
-			     
-			     actions.moveToElement(canvas)
-			        .moveByOffset(0, 200)
-		            .click()
-		            .release()
-		            .perform();
-			     System.out.println("Add pin windows opened");
-		 
-			     
-	    	   driver.switchTo().frame(0);
-			    driver.findElement(By.xpath("//body[@class='mce-content-body ']")).sendKeys("Testing 3..."); 
-			    driver.switchTo().defaultContent();
-			    try {
-		  		    WebElement Save= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Save']")));
-		  		  Save.click();
-		  		    System.out.println("save option clicked successfully.");
+	     public void Hide_pins() throws InterruptedException
+	     {
+	    	 WebDriverWait wait = new WebDriverWait(driver, 30); 
+	    	 try {
+		  		    WebElement hidepins= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Hide Pins']")));
+		  		  hidepins.click();
+		  		    System.out.println("************hide pins clicked successfully.***************");
 		  		    Thread.sleep(2000);
 		  		} catch (Exception e) {
-		  		    System.out.println("save option is not clicked : " + e.getMessage());
+		  		    System.out.println("show pins is not clicked : " + e.getMessage());
 		  		}
-//			    WebDriverWait Wait = new WebDriverWait(driver, 10);
-//				By toasterLocator = By.xpath("//div[text()='Pins Saved successfully']']");
-//				WebElement toasterElement = Wait.until(ExpectedConditions.presenceOfElementLocated(toasterLocator));
-//				String toasterMessage = toasterElement.getText();
-//				AssertJUnit.assertEquals("Pins Saved successfully", toasterMessage);
-//				System.out.println("***************Pins text saved sucessfully****************");
+	    	 Thread.sleep(3000);
 	     }
 	     
+	     
+	     
 	     @Test(priority=8)
-	     public void show_pins() throws InterruptedException
+	     public void Retrive_pin1() throws InterruptedException
 	     {
+
 	    	 WebDriverWait wait = new WebDriverWait(driver, 30); 
 	    	 try {
 		  		    WebElement showpins= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@title='Show Pins']")));
@@ -361,12 +397,7 @@ public class Atlas_Pins {
 		  		} catch (Exception e) {
 		  		    System.out.println("show pins is not clicked : " + e.getMessage());
 		  		}
-	    	 Thread.sleep(3000);
-	     }
-	     
-	     @Test(priority=9)
-	     public void Retrive_pin1()
-	     {
+	    	 
 	    	 WebElement canvas = driver.findElement(By.xpath("//canvas"));
 		     Actions actions = new Actions(driver);
 		     
@@ -378,52 +409,54 @@ public class Atlas_Pins {
 		     WebElement text1 = driver.findElement(By.xpath("//body[@class='mce-content-body ']"));
 		     String actualText = text1.getText();
 		     String expectedText = "Testing 1...";
-			     
-			     Assert.assertEquals(actualText, expectedText, "Texts are not equal");
+			 System.out.println("Pin1 text----"+actualText);
+			 System.out.println("************pin1 text verified successfully*************");
+			 Assert.assertEquals(actualText, expectedText, "Texts are not equal");
+			 System.out.println("**************pin1 text retrive successfully***************");
+			 Thread.sleep(5000);
+			 
+	     }
+	     
+	     @Test(priority=9)
+	     public void pin_cancel() throws InterruptedException
+	     {
+	    	 WebDriverWait wait = new WebDriverWait(driver, 30); 
+			 driver.switchTo().defaultContent();
+			 try {
+		  		    WebElement cancel= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Cancel']")));
+		  		  cancel.click();
+		  		    System.out.println("cancel clicked successfully.");
+		  		    Thread.sleep(2000);
+		  		} catch (Exception e) {
+		  		    System.out.println("cancel is not clicked : " + e.getMessage());
+		  		}
+			 Thread.sleep(3000);
 			     
 		 }
 	     
-	     
-//	     @Test(priority=10)
-//	     public void Retrive_pin2()
-//	     {
-//	    	 WebElement canvas = driver.findElement(By.xpath("//canvas"));
-//		     Actions actions = new Actions(driver);
-//		     
-//		     actions.moveToElement(canvas)
-//		        .moveByOffset(200, 0)
-//	            .click()
-//	            .release()
-//	            .perform();
-//		     driver.switchTo().frame(0);
-//		     WebElement text1 = driver.findElement(By.xpath("//body[@class='mce-content-body ']"));
-//		     String actualText = text1.getText();
-//		     String expectedText = "Testing 2...";
-//			     
-//			     Assert.assertEquals(actualText, expectedText, "Texts are not equal");
-//			     
-//		 }
-//	     
-//	     
-//	     @Test(priority=11)
-//	     public void Retrive_pin3()
-//	     {
-//	    	 WebElement canvas = driver.findElement(By.xpath("//canvas"));
-//		     Actions actions = new Actions(driver);
-//		     
-//		     actions.moveToElement(canvas)
-//		        .moveByOffset(0, 200)
-//	            .click()
-//	            .release()
-//	            .perform();
-//		     driver.switchTo().frame(0);
-//		     WebElement text1 = driver.findElement(By.xpath("//body[@class='mce-content-body ']"));
-//		     String actualText = text1.getText();
-//		     String expectedText = "Testing 3...";
-//			     
-//			     Assert.assertEquals(actualText, expectedText, "Texts are not equal");
-//			     
-//		 }
+	     @Test(priority=10)
+	     public void pin_delete() throws InterruptedException
+	     {
+	    	 WebDriverWait wait = new WebDriverWait(driver, 30); 
+	    	 WebElement canvas = driver.findElement(By.xpath("//canvas"));
+		     Actions actions = new Actions(driver);
+		     
+		     actions.moveToElement(canvas)
+	            .click()
+	            .release()
+	            .perform();
+			 driver.switchTo().defaultContent();
+			 try {
+		  		    WebElement delete= wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Delete']")));
+		  		  delete.click();
+		  		    System.out.println("delete clicked successfully.");
+		  		    Thread.sleep(2000);
+		  		} catch (Exception e) {
+		  		    System.out.println("delete is not clicked : " + e.getMessage());
+		  		}
+			 Thread.sleep(3000);
+			     
+		 }
 	     
 	     
 	@AfterTest

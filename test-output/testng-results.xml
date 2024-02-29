@@ -1,65 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-29T09:50:07 IST" name="Default suite" finished-at="2024-02-29T09:52:19 IST" duration-ms="132013">
+  <suite started-at="2024-02-29T13:37:05 IST" name="Default suite" finished-at="2024-02-29T13:38:25 IST" duration-ms="79124">
     <groups>
     </groups>
-    <test started-at="2024-02-29T09:50:07 IST" name="Default test" finished-at="2024-02-29T09:52:19 IST" duration-ms="132013">
-      <class name="Sanity.Atlas.Testing">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Sanity.Atlas.Testing@7bab3f1a]" started-at="2024-02-29T09:50:07 IST" name="setup" finished-at="2024-02-29T09:50:07 IST" duration-ms="810" status="PASS">
+    <test started-at="2024-02-29T13:37:05 IST" name="Default test" finished-at="2024-02-29T13:38:25 IST" duration-ms="79124">
+      <class name="Sanity.Atlas.Atlas_Pins">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Sanity.Atlas.Atlas_Pins@36916eb0]" started-at="2024-02-29T13:37:05 IST" name="setup" finished-at="2024-02-29T13:37:06 IST" duration-ms="573" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:1, instance:Sanity.Atlas.Testing@7bab3f1a]" started-at="2024-02-29T09:50:07 IST" name="login" finished-at="2024-02-29T09:50:18 IST" duration-ms="10709" status="PASS">
+        <test-method signature="login()[pri:1, instance:Sanity.Atlas.Atlas_Pins@36916eb0]" started-at="2024-02-29T13:37:06 IST" name="login" finished-at="2024-02-29T13:37:15 IST" duration-ms="8938" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="series_set()[pri:2, instance:Sanity.Atlas.Testing@7bab3f1a]" started-at="2024-02-29T09:50:18 IST" name="series_set" finished-at="2024-02-29T09:50:37 IST" duration-ms="18821" status="PASS">
+        <test-method signature="series_set()[pri:2, instance:Sanity.Atlas.Atlas_Pins@36916eb0]" started-at="2024-02-29T13:37:15 IST" name="series_set" finished-at="2024-02-29T13:37:33 IST" duration-ms="18312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- series_set -->
-        <test-method signature="atlaseditor()[pri:3, instance:Sanity.Atlas.Testing@7bab3f1a]" started-at="2024-02-29T09:50:37 IST" name="atlaseditor" finished-at="2024-02-29T09:50:54 IST" duration-ms="16698" status="PASS">
+        <test-method signature="atlaseditor()[pri:3, instance:Sanity.Atlas.Atlas_Pins@36916eb0]" started-at="2024-02-29T13:37:33 IST" name="atlaseditor" finished-at="2024-02-29T13:37:47 IST" duration-ms="14136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- atlaseditor -->
-        <test-method signature="Editmenu()[pri:4, instance:Sanity.Atlas.Testing@7bab3f1a]" started-at="2024-02-29T09:50:54 IST" name="Editmenu" finished-at="2024-02-29T09:50:56 IST" duration-ms="2210" status="PASS">
+        <test-method signature="Editmenu()[pri:4, instance:Sanity.Atlas.Atlas_Pins@36916eb0]" started-at="2024-02-29T13:37:47 IST" name="Editmenu" finished-at="2024-02-29T13:37:50 IST" duration-ms="2180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Editmenu -->
-        <test-method signature="contributor()[pri:5, instance:Sanity.Atlas.Testing@7bab3f1a]" started-at="2024-02-29T09:50:56 IST" name="contributor" finished-at="2024-02-29T09:51:00 IST" duration-ms="4317" status="PASS">
+        <test-method signature="add_pins1()[pri:5, instance:Sanity.Atlas.Atlas_Pins@36916eb0]" started-at="2024-02-29T13:37:50 IST" name="add_pins1" finished-at="2024-02-29T13:37:54 IST" duration-ms="4658" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- contributor -->
-        <test-method signature="draw()[pri:6, instance:Sanity.Atlas.Testing@7bab3f1a]" started-at="2024-02-29T09:51:00 IST" name="draw" finished-at="2024-02-29T09:51:03 IST" duration-ms="2475" status="PASS">
+        </test-method> <!-- add_pins1 -->
+        <test-method signature="show_pins()[pri:6, instance:Sanity.Atlas.Atlas_Pins@36916eb0]" started-at="2024-02-29T13:37:54 IST" name="show_pins" finished-at="2024-02-29T13:38:01 IST" duration-ms="7136" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- draw -->
-        <test-method signature="annotation()[pri:7, instance:Sanity.Atlas.Testing@7bab3f1a]" started-at="2024-02-29T09:51:03 IST" name="annotation" finished-at="2024-02-29T09:51:23 IST" duration-ms="20067" status="PASS">
+        </test-method> <!-- show_pins -->
+        <test-method signature="Hide_pins()[pri:7, instance:Sanity.Atlas.Atlas_Pins@36916eb0]" started-at="2024-02-29T13:38:01 IST" name="Hide_pins" finished-at="2024-02-29T13:38:06 IST" duration-ms="5109" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- annotation -->
-        <test-method signature="save()[pri:8, instance:Sanity.Atlas.Testing@7bab3f1a]" started-at="2024-02-29T09:51:23 IST" name="save" finished-at="2024-02-29T09:51:27 IST" duration-ms="4361" status="PASS">
+        </test-method> <!-- Hide_pins -->
+        <test-method signature="Retrive_pin1()[pri:8, instance:Sanity.Atlas.Atlas_Pins@36916eb0]" started-at="2024-02-29T13:38:06 IST" name="Retrive_pin1" finished-at="2024-02-29T13:38:14 IST" duration-ms="7418" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- save -->
-        <test-method signature="back()[pri:9, instance:Sanity.Atlas.Testing@7bab3f1a]" started-at="2024-02-29T09:51:27 IST" name="back" finished-at="2024-02-29T09:51:32 IST" duration-ms="5214" status="PASS">
+        </test-method> <!-- Retrive_pin1 -->
+        <test-method signature="pin_cancel()[pri:9, instance:Sanity.Atlas.Atlas_Pins@36916eb0]" started-at="2024-02-29T13:38:14 IST" name="pin_cancel" finished-at="2024-02-29T13:38:19 IST" duration-ms="5156" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- back -->
-        <test-method signature="retrive()[pri:10, instance:Sanity.Atlas.Testing@7bab3f1a]" started-at="2024-02-29T09:51:32 IST" name="retrive" finished-at="2024-02-29T09:52:00 IST" duration-ms="27664" status="PASS">
+        </test-method> <!-- pin_cancel -->
+        <test-method signature="pin_delete()[pri:10, instance:Sanity.Atlas.Atlas_Pins@36916eb0]" started-at="2024-02-29T13:38:19 IST" name="pin_delete" finished-at="2024-02-29T13:38:24 IST" duration-ms="5349" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- retrive -->
-        <test-method signature="delete()[pri:11, instance:Sanity.Atlas.Testing@7bab3f1a]" started-at="2024-02-29T09:52:00 IST" name="delete" finished-at="2024-02-29T09:52:18 IST" duration-ms="18452" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- delete -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Sanity.Atlas.Testing@7bab3f1a]" started-at="2024-02-29T09:52:18 IST" name="close" finished-at="2024-02-29T09:52:19 IST" duration-ms="123" status="PASS">
+        </test-method> <!-- pin_delete -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Sanity.Atlas.Atlas_Pins@36916eb0]" started-at="2024-02-29T13:38:24 IST" name="close" finished-at="2024-02-29T13:38:25 IST" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- Sanity.Atlas.Testing -->
+      </class> <!-- Sanity.Atlas.Atlas_Pins -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
