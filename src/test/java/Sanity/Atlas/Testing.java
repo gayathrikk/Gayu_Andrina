@@ -314,10 +314,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		{
 			clickElementByXpath("//a[@title='Save']", "save");
 			WebDriverWait deleteWait = new WebDriverWait(driver, 100);
-			By toasterLocator = By.xpath("//div[text()='Sucessfully saved the regions']");
+			By toasterLocator = By.xpath("//div[text()='Successfully saved the regions']");
 			WebElement toasterElement = deleteWait.until(ExpectedConditions.presenceOfElementLocated(toasterLocator));
 			String toasterMessage = toasterElement.getText();
-			AssertJUnit.assertEquals("Sucessfully saved the regions", toasterMessage);
+			AssertJUnit.assertEquals("Successfully saved the regions", toasterMessage);
 			Thread.sleep(2000);
 			checkConsoleLog();
 			Save_API();
