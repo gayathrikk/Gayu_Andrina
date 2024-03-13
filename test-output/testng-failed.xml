@@ -3,13 +3,23 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Sanity.Atlas.Atlas_Pins">
+      <class name="Sanity.Atlas.Testing">
         <methods>
-          <include name="Retrive_pin2"/>
-          <include name="close"/>
+          <include name="Editmenu"/>
+          <include name="delete"/>
+          <include name="back"/>
+          <include name="draw"/>
+          <include name="login"/>
           <include name="setup"/>
+          <include name="atlaseditor"/>
+          <include name="annotation"/>
+          <include name="close"/>
+          <include name="save"/>
+          <include name="series_set"/>
+          <include name="contributor"/>
+          <include name="retrive"/>
         </methods>
-      </class> <!-- Sanity.Atlas.Atlas_Pins -->
+      </class> <!-- Sanity.Atlas.Testing -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
