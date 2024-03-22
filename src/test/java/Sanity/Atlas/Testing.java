@@ -2,6 +2,7 @@
 	
 	import org.testng.annotations.Test;
 
+
 	
 	import org.testng.Assert;
 	import org.testng.AssertJUnit;
@@ -43,7 +44,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		{
 			
 			  DesiredCapabilities dc = DesiredCapabilities.chrome();
-		        URL url = new URL("http://172.12.20.99:444/wd/hub");
+		        URL url = new URL("http://172.12.20.99:4444/wd/hub");
 		        driver = new RemoteWebDriver(url, dc);
 		
 		       
