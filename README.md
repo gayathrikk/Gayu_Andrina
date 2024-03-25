@@ -5,3 +5,4 @@
 "# AtlasEditor_TrsData" 
 "# AtlasEditor_TrsData" 
 "# Atlas_Geometry_Dot" 
+"# Atlas_Geometry_Box" 
