@@ -7,3 +7,4 @@
 "# Atlas_Geometry_Dot" 
 "# Atlas_Geometry_Box" 
 "# Atlas_Geometry_Line" 
+"# Atlas_Geometry_Polygon" 
