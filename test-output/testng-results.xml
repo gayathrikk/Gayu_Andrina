@@ -2,60 +2,60 @@
 <testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-25T15:12:03 IST" name="Default suite" finished-at="2024-03-25T15:13:34 IST" duration-ms="90421">
+  <suite started-at="2024-03-25T16:01:13 IST" name="Default suite" finished-at="2024-03-25T16:02:51 IST" duration-ms="98201">
     <groups>
     </groups>
-    <test started-at="2024-03-25T15:12:03 IST" name="Default test" finished-at="2024-03-25T15:13:34 IST" duration-ms="90421">
-      <class name="Sanity.Atlas.Atlas_Geometry_Dot">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Sanity.Atlas.Atlas_Geometry_Dot@1e1a0406]" started-at="2024-03-25T15:12:03 IST" name="setup" finished-at="2024-03-25T15:12:04 IST" duration-ms="960" status="PASS">
+    <test started-at="2024-03-25T16:01:13 IST" name="Default test" finished-at="2024-03-25T16:02:51 IST" duration-ms="98201">
+      <class name="Sanity.Atlas.Atlas_Geometry_Box">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Sanity.Atlas.Atlas_Geometry_Box@1e1a0406]" started-at="2024-03-25T16:01:13 IST" name="setup" finished-at="2024-03-25T16:01:14 IST" duration-ms="871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:1, instance:Sanity.Atlas.Atlas_Geometry_Dot@1e1a0406]" started-at="2024-03-25T15:12:04 IST" name="login" finished-at="2024-03-25T15:12:22 IST" duration-ms="17685" status="PASS">
+        <test-method signature="login()[pri:1, instance:Sanity.Atlas.Atlas_Geometry_Box@1e1a0406]" started-at="2024-03-25T16:01:14 IST" name="login" finished-at="2024-03-25T16:01:32 IST" duration-ms="17681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="series_set()[pri:2, instance:Sanity.Atlas.Atlas_Geometry_Dot@1e1a0406]" started-at="2024-03-25T15:12:22 IST" name="series_set" finished-at="2024-03-25T15:12:39 IST" duration-ms="17290" status="PASS">
+        <test-method signature="series_set()[pri:2, instance:Sanity.Atlas.Atlas_Geometry_Box@1e1a0406]" started-at="2024-03-25T16:01:32 IST" name="series_set" finished-at="2024-03-25T16:01:50 IST" duration-ms="18818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- series_set -->
-        <test-method signature="atlaseditor()[pri:3, instance:Sanity.Atlas.Atlas_Geometry_Dot@1e1a0406]" started-at="2024-03-25T15:12:39 IST" name="atlaseditor" finished-at="2024-03-25T15:12:54 IST" duration-ms="14345" status="PASS">
+        <test-method signature="atlaseditor()[pri:3, instance:Sanity.Atlas.Atlas_Geometry_Box@1e1a0406]" started-at="2024-03-25T16:01:50 IST" name="atlaseditor" finished-at="2024-03-25T16:02:05 IST" duration-ms="14444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- atlaseditor -->
-        <test-method signature="Editmenu()[pri:4, instance:Sanity.Atlas.Atlas_Geometry_Dot@1e1a0406]" started-at="2024-03-25T15:12:54 IST" name="Editmenu" finished-at="2024-03-25T15:12:56 IST" duration-ms="2361" status="PASS">
+        <test-method signature="Editmenu()[pri:4, instance:Sanity.Atlas.Atlas_Geometry_Box@1e1a0406]" started-at="2024-03-25T16:02:05 IST" name="Editmenu" finished-at="2024-03-25T16:02:08 IST" duration-ms="2616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Editmenu -->
-        <test-method signature="contributor()[pri:5, instance:Sanity.Atlas.Atlas_Geometry_Dot@1e1a0406]" started-at="2024-03-25T15:12:56 IST" name="contributor" finished-at="2024-03-25T15:13:01 IST" duration-ms="4671" status="PASS">
+        <test-method signature="contributor()[pri:5, instance:Sanity.Atlas.Atlas_Geometry_Box@1e1a0406]" started-at="2024-03-25T16:02:08 IST" name="contributor" finished-at="2024-03-25T16:02:12 IST" duration-ms="4774" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contributor -->
-        <test-method signature="draw()[pri:6, instance:Sanity.Atlas.Atlas_Geometry_Dot@1e1a0406]" started-at="2024-03-25T15:13:01 IST" name="draw" finished-at="2024-03-25T15:13:03 IST" duration-ms="2307" status="PASS">
+        <test-method signature="draw()[pri:6, instance:Sanity.Atlas.Atlas_Geometry_Box@1e1a0406]" started-at="2024-03-25T16:02:12 IST" name="draw" finished-at="2024-03-25T16:02:15 IST" duration-ms="2458" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- draw -->
-        <test-method signature="annotation()[pri:7, instance:Sanity.Atlas.Atlas_Geometry_Dot@1e1a0406]" started-at="2024-03-25T15:13:03 IST" name="annotation" finished-at="2024-03-25T15:13:12 IST" duration-ms="9099" status="PASS">
+        <test-method signature="annotation()[pri:7, instance:Sanity.Atlas.Atlas_Geometry_Box@1e1a0406]" started-at="2024-03-25T16:02:15 IST" name="annotation" finished-at="2024-03-25T16:02:25 IST" duration-ms="9896" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- annotation -->
-        <test-method signature="geometry_Dot()[pri:8, instance:Sanity.Atlas.Atlas_Geometry_Dot@1e1a0406]" started-at="2024-03-25T15:13:12 IST" name="geometry_Dot" finished-at="2024-03-25T15:13:24 IST" duration-ms="12070" status="PASS">
+        <test-method signature="geometry_Box()[pri:8, instance:Sanity.Atlas.Atlas_Geometry_Box@1e1a0406]" started-at="2024-03-25T16:02:25 IST" name="geometry_Box" finished-at="2024-03-25T16:02:37 IST" duration-ms="12788" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- geometry_Dot -->
-        <test-method signature="Dot_select()[pri:9, instance:Sanity.Atlas.Atlas_Geometry_Dot@1e1a0406]" started-at="2024-03-25T15:13:24 IST" name="Dot_select" finished-at="2024-03-25T15:13:27 IST" duration-ms="2603" status="PASS">
+        </test-method> <!-- geometry_Box -->
+        <test-method signature="Box_select()[pri:9, instance:Sanity.Atlas.Atlas_Geometry_Box@1e1a0406]" started-at="2024-03-25T16:02:37 IST" name="Box_select" finished-at="2024-03-25T16:02:43 IST" duration-ms="5891" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Dot_select -->
-        <test-method signature="Dot_delete()[pri:10, instance:Sanity.Atlas.Atlas_Geometry_Dot@1e1a0406]" started-at="2024-03-25T15:13:27 IST" name="Dot_delete" finished-at="2024-03-25T15:13:34 IST" duration-ms="6818" status="PASS">
+        </test-method> <!-- Box_select -->
+        <test-method signature="Box_delete()[pri:10, instance:Sanity.Atlas.Atlas_Geometry_Box@1e1a0406]" started-at="2024-03-25T16:02:43 IST" name="Box_delete" finished-at="2024-03-25T16:02:51 IST" duration-ms="7673" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Dot_delete -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Sanity.Atlas.Atlas_Geometry_Dot@1e1a0406]" started-at="2024-03-25T15:13:34 IST" name="close" finished-at="2024-03-25T15:13:34 IST" duration-ms="183" status="PASS">
+        </test-method> <!-- Box_delete -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Sanity.Atlas.Atlas_Geometry_Box@1e1a0406]" started-at="2024-03-25T16:02:51 IST" name="close" finished-at="2024-03-25T16:02:51 IST" duration-ms="267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- Sanity.Atlas.Atlas_Geometry_Dot -->
+      </class> <!-- Sanity.Atlas.Atlas_Geometry_Box -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
