@@ -2,60 +2,60 @@
 <testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-25T16:11:11 IST" name="Default suite" finished-at="2024-03-25T16:12:37 IST" duration-ms="85989">
+  <suite started-at="2024-03-25T16:25:57 IST" name="Default suite" finished-at="2024-03-25T16:27:17 IST" duration-ms="79450">
     <groups>
     </groups>
-    <test started-at="2024-03-25T16:11:11 IST" name="Default test" finished-at="2024-03-25T16:12:37 IST" duration-ms="85989">
-      <class name="Sanity.Atlas.Atlas_Geometry_Line">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Sanity.Atlas.Atlas_Geometry_Line@1e1a0406]" started-at="2024-03-25T16:11:11 IST" name="setup" finished-at="2024-03-25T16:11:11 IST" duration-ms="843" status="PASS">
+    <test started-at="2024-03-25T16:25:57 IST" name="Default test" finished-at="2024-03-25T16:27:17 IST" duration-ms="79450">
+      <class name="Sanity.Atlas.Atlas_Geometry_Polygon">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Sanity.Atlas.Atlas_Geometry_Polygon@1e1a0406]" started-at="2024-03-25T16:25:57 IST" name="setup" finished-at="2024-03-25T16:25:58 IST" duration-ms="810" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:1, instance:Sanity.Atlas.Atlas_Geometry_Line@1e1a0406]" started-at="2024-03-25T16:11:11 IST" name="login" finished-at="2024-03-25T16:11:23 IST" duration-ms="11393" status="PASS">
+        <test-method signature="login()[pri:1, instance:Sanity.Atlas.Atlas_Geometry_Polygon@1e1a0406]" started-at="2024-03-25T16:25:58 IST" name="login" finished-at="2024-03-25T16:26:06 IST" duration-ms="8282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="series_set()[pri:2, instance:Sanity.Atlas.Atlas_Geometry_Line@1e1a0406]" started-at="2024-03-25T16:11:23 IST" name="series_set" finished-at="2024-03-25T16:11:41 IST" duration-ms="17801" status="PASS">
+        <test-method signature="series_set()[pri:2, instance:Sanity.Atlas.Atlas_Geometry_Polygon@1e1a0406]" started-at="2024-03-25T16:26:06 IST" name="series_set" finished-at="2024-03-25T16:26:23 IST" duration-ms="17237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- series_set -->
-        <test-method signature="atlaseditor()[pri:3, instance:Sanity.Atlas.Atlas_Geometry_Line@1e1a0406]" started-at="2024-03-25T16:11:41 IST" name="atlaseditor" finished-at="2024-03-25T16:11:55 IST" duration-ms="14379" status="PASS">
+        <test-method signature="atlaseditor()[pri:3, instance:Sanity.Atlas.Atlas_Geometry_Polygon@1e1a0406]" started-at="2024-03-25T16:26:23 IST" name="atlaseditor" finished-at="2024-03-25T16:26:38 IST" duration-ms="14234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- atlaseditor -->
-        <test-method signature="Editmenu()[pri:4, instance:Sanity.Atlas.Atlas_Geometry_Line@1e1a0406]" started-at="2024-03-25T16:11:55 IST" name="Editmenu" finished-at="2024-03-25T16:11:57 IST" duration-ms="2437" status="PASS">
+        <test-method signature="Editmenu()[pri:4, instance:Sanity.Atlas.Atlas_Geometry_Polygon@1e1a0406]" started-at="2024-03-25T16:26:38 IST" name="Editmenu" finished-at="2024-03-25T16:26:40 IST" duration-ms="2286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Editmenu -->
-        <test-method signature="contributor()[pri:5, instance:Sanity.Atlas.Atlas_Geometry_Line@1e1a0406]" started-at="2024-03-25T16:11:57 IST" name="contributor" finished-at="2024-03-25T16:12:02 IST" duration-ms="4638" status="PASS">
+        <test-method signature="contributor()[pri:5, instance:Sanity.Atlas.Atlas_Geometry_Polygon@1e1a0406]" started-at="2024-03-25T16:26:40 IST" name="contributor" finished-at="2024-03-25T16:26:44 IST" duration-ms="4460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contributor -->
-        <test-method signature="draw()[pri:6, instance:Sanity.Atlas.Atlas_Geometry_Line@1e1a0406]" started-at="2024-03-25T16:12:02 IST" name="draw" finished-at="2024-03-25T16:12:04 IST" duration-ms="2281" status="PASS">
+        <test-method signature="draw()[pri:6, instance:Sanity.Atlas.Atlas_Geometry_Polygon@1e1a0406]" started-at="2024-03-25T16:26:44 IST" name="draw" finished-at="2024-03-25T16:26:47 IST" duration-ms="2227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- draw -->
-        <test-method signature="annotation()[pri:7, instance:Sanity.Atlas.Atlas_Geometry_Line@1e1a0406]" started-at="2024-03-25T16:12:04 IST" name="annotation" finished-at="2024-03-25T16:12:13 IST" duration-ms="9044" status="PASS">
+        <test-method signature="annotation()[pri:7, instance:Sanity.Atlas.Atlas_Geometry_Polygon@1e1a0406]" started-at="2024-03-25T16:26:47 IST" name="annotation" finished-at="2024-03-25T16:26:55 IST" duration-ms="8804" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- annotation -->
-        <test-method signature="geometry_Box()[pri:8, instance:Sanity.Atlas.Atlas_Geometry_Line@1e1a0406]" started-at="2024-03-25T16:12:13 IST" name="geometry_Box" finished-at="2024-03-25T16:12:24 IST" duration-ms="10445" status="PASS">
+        <test-method signature="geometry_Box()[pri:8, instance:Sanity.Atlas.Atlas_Geometry_Polygon@1e1a0406]" started-at="2024-03-25T16:26:55 IST" name="geometry_Box" finished-at="2024-03-25T16:27:04 IST" duration-ms="8625" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- geometry_Box -->
-        <test-method signature="Box_select()[pri:9, instance:Sanity.Atlas.Atlas_Geometry_Line@1e1a0406]" started-at="2024-03-25T16:12:24 IST" name="Box_select" finished-at="2024-03-25T16:12:30 IST" duration-ms="5657" status="PASS">
+        <test-method signature="Box_select()[pri:9, instance:Sanity.Atlas.Atlas_Geometry_Polygon@1e1a0406]" started-at="2024-03-25T16:27:04 IST" name="Box_select" finished-at="2024-03-25T16:27:10 IST" duration-ms="5517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Box_select -->
-        <test-method signature="Box_delete()[pri:10, instance:Sanity.Atlas.Atlas_Geometry_Line@1e1a0406]" started-at="2024-03-25T16:12:30 IST" name="Box_delete" finished-at="2024-03-25T16:12:36 IST" duration-ms="6856" status="PASS">
+        <test-method signature="Box_delete()[pri:10, instance:Sanity.Atlas.Atlas_Geometry_Polygon@1e1a0406]" started-at="2024-03-25T16:27:10 IST" name="Box_delete" finished-at="2024-03-25T16:27:16 IST" duration-ms="6793" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Box_delete -->
-        <test-method is-config="true" signature="close()[pri:0, instance:Sanity.Atlas.Atlas_Geometry_Line@1e1a0406]" started-at="2024-03-25T16:12:36 IST" name="close" finished-at="2024-03-25T16:12:37 IST" duration-ms="194" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:Sanity.Atlas.Atlas_Geometry_Polygon@1e1a0406]" started-at="2024-03-25T16:27:16 IST" name="close" finished-at="2024-03-25T16:27:17 IST" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- Sanity.Atlas.Atlas_Geometry_Line -->
+      </class> <!-- Sanity.Atlas.Atlas_Geometry_Polygon -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
