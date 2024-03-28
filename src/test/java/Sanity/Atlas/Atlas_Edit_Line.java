@@ -15,7 +15,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class Atlas_Geometry_Line {
+public class Atlas_Edit_Line {
 	
 	 private RemoteWebDriver driver;
 		
@@ -25,7 +25,7 @@ public class Atlas_Geometry_Line {
 		{
 			
 			  DesiredCapabilities dc = DesiredCapabilities.chrome();
-		        URL url = new URL("http://172.12.20.99:4444/wd/hub");
+		        URL url = new URL("http://172.12.20.99:4443/wd/hub");
 		        driver = new RemoteWebDriver(url, dc);
 		
 		       
@@ -292,18 +292,26 @@ public class Atlas_Geometry_Line {
 		}
 		
 		@Test(priority=9)
-		public void Line_select() throws InterruptedException
-		{
-			clickElementByXpath("//a[@title='Select']", "Select");
-			 WebElement canvas = driver.findElement(By.xpath("//canvas"));
-		     Actions actions = new Actions(driver);
-		     actions.moveToElement(canvas)
-	            .click()
-	            .release()
-	            .perform();
-		     Thread.sleep(3000);
-		     System.out.println("Line region selected successfully");
+		public void Line_Edit() throws InterruptedException {
+		    clickElementByXpath("//a[@title='Edit']", "Edit");
+		    
+		    WebElement canvas = driver.findElement(By.xpath("//canvas"));
+		    Actions actions = new Actions(driver);
+		    
+		   
+		    // Click and hold
+		    actions.click(canvas)
+		    	   .clickAndHold(canvas)
+		           .moveByOffset(0, -200) 
+		           .release() 
+		           .build()
+		           .perform();
+		    
+		    Thread.sleep(5000);
+		    System.out.println("Line region Edited successfully");
 		}
+
+
 		
 		@Test(priority=10)
 		public void Line_delete()

@@ -3,13 +3,20 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Sanity.Atlas.AtlasEditor_Activity">
+      <class name="Sanity.Atlas.Atlas_Edit_Line">
         <methods>
-          <include name="afterTest"/>
+          <include name="atlaseditor"/>
+          <include name="contributor"/>
+          <include name="geometry_line"/>
+          <include name="series_set"/>
+          <include name="draw"/>
           <include name="setup"/>
-          <include name="userName"/>
+          <include name="Editmenu"/>
+          <include name="Line_Edit"/>
+          <include name="login"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- Sanity.Atlas.AtlasEditor_Activity -->
+      </class> <!-- Sanity.Atlas.Atlas_Edit_Line -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
