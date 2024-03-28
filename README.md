@@ -10,3 +10,4 @@
 "# Atlas_Geometry_Polygon" 
 "# Atlas_Edit_Line" 
 "# Atlas_Edit_Box" 
+"# Atlas_Edit_Polygon" 
