@@ -3,6 +3,7 @@
 	import org.testng.annotations.Test;
 
 
+
 	
 	import org.testng.Assert;
 	import org.testng.AssertJUnit;
@@ -44,7 +45,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 		{
 			
 			  DesiredCapabilities dc = DesiredCapabilities.chrome();
-		        URL url = new URL("http://172.12.20.99:4444/wd/hub");
+		        URL url = new URL("http://172.12.20.99:4443/wd/hub");
 		        driver = new RemoteWebDriver(url, dc);
 		
 		       
@@ -89,7 +90,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 	        }
 	        WebElement emailInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='email']")));
 	        if (emailInput != null && emailInput.isDisplayed()) {
-	            emailInput.sendKeys("teamsoftware457@gmail.com");
+	            emailInput.sendKeys("softwareteam45@gmail.com");
 	            System.out.println("Email was entered successfully.");
 	        } else {
 	           System.out.println("Email was not entered.");

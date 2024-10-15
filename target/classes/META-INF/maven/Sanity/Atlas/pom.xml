@@ -57,7 +57,15 @@
         <artifactId>mysql-connector-java</artifactId>
         <version>8.0.26</version> 
     </dependency>
-   <!--  <dependency>
+    <!-- BrowserMob Proxy -->
+<dependency>
+    <groupId>net.lightbody.bmp</groupId>
+    <artifactId>browsermob-core</artifactId>
+    <version>2.1.5</version> <!-- or the latest version -->
+    <scope>test</scope>
+</dependency>
+ 
+    <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
     <version>5.5.3</version>
@@ -67,13 +75,14 @@
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <version>4.18.1</version>
-    </dependency>
+    </dependency> 
    
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-chrome-driver</artifactId>
     <version>4.16.1</version>
-</dependency>-->
+</dependency>
+ 
     
 </dependencies>
 
@@ -92,7 +101,7 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.0.0-M5</version>
           <configuration>
-            <test>Sanity.Atlas.Atlas_Edit_Polygon</test>
+            <test>Sanity.Atlas.Andrina_Vote</test>
           </configuration>
         </plugin>
       </plugins>

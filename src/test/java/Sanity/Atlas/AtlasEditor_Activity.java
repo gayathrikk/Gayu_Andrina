@@ -24,7 +24,7 @@ public class AtlasEditor_Activity {
 	public void setup() throws Exception {
 	DesiredCapabilities dc = DesiredCapabilities.chrome();
 	// URL url = new URL("http://172.20.23.7:5555/wd/hub");
-	URL url = new URL("http://172.12.20.99:4444/");
+	URL url = new URL("http://172.12.20.99:4443/");
 	driver = new RemoteWebDriver(url, dc);
 	wait = new WebDriverWait(driver, 30);
 
@@ -118,12 +118,12 @@ public class AtlasEditor_Activity {
 	Thread.sleep(3000);
 
 	WebElement redirectIcon = wait.until(
-	ExpectedConditions.visibilityOfElementLocated(By.xpath("(//nb-card-footer[@class='p-2'])[1]/nb-icon")));
+	ExpectedConditions.visibilityOfElementLocated(By.xpath("//nb-icon[@nbtooltip='Viewer']")));
 	if (redirectIcon != null && redirectIcon.isDisplayed()) {
 	redirectIcon.click();
-	System.out.println("Brain was clicked successfully");
+	System.out.println("Viewer was clicked successfully");
 	} else {
-	System.out.println("Brain was not clicked");
+	System.out.println("Viewer was not clicked");
 	}
 	Thread.sleep(3000);
 
